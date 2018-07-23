@@ -585,7 +585,7 @@ if(RTOS_CHIBIOS_CHECK)
             message(STATUS "RTOS is: ChibiOS (source from: ${CHIBIOS_SOURCE})")
 
             # check if we already have the sources, no need to copy again
-            if(NOT EXISTS "${CMAKE_BINARY_DIR}/mbedTLS_Source")
+            if(NOT EXISTS "${CMAKE_BINARY_DIR}/ChibiOS_Source")
                 file(COPY "${CHIBIOS_SOURCE}/" DESTINATION "${CMAKE_BINARY_DIR}/ChibiOS_Source")
             else()
                 message(STATUS "Using local cache of ChibiOS source from ${CHIBIOS_SOURCE}")
