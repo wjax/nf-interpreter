@@ -29,7 +29,6 @@ include(FREERTOS_${TARGET_SERIES}_GCC_options)
 # set include directories for FreeRTOS
 list(APPEND FREERTOS_INCLUDE_DIRS ${PROJECT_BINARY_DIR}/FreeRTOS_Source/FreeRTOS/Source/include)
 list(APPEND FREERTOS_INCLUDE_DIRS ${PROJECT_BINARY_DIR}/FreeRTOS_Source/FreeRTOS/Source/include/private) 
-list(APPEND FREERTOS_INCLUDE_DIRS ${PROJECT_BINARY_DIR}/FreeRTOS_Source/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1)
 
 # source files and GCC options according to target vendor and series
 
